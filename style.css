@@ -1,0 +1,21 @@
+
+.container{
+   
+}
+.about-wrapper{
+ 
+    display: flex;
+}
+
+.about-img{
+    
+   border-radius: 25px;
+   border-image-width: 600px;
+   shape-image-threshold: inherit;
+   size-adjust: 600px;
+}
+
+.about-con{
+
+    align-items: right;
+}
