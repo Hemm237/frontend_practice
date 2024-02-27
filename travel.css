@@ -207,11 +207,15 @@ header.sticky {
 }
 
 .row img{
-    width :75px;
+    width :110px;
     height:auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: #000;
     border-radius: 15px;
+    /*position: absolute;
+    top: 30%;*/
+    position: relative ;
+    top: -26%;
 }
 
 
@@ -219,6 +223,7 @@ header.sticky {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
+
 }
 
 .row p{
@@ -237,6 +242,7 @@ header.sticky {
 
 .contact {
     background-color: darkgray;
+    
 }
 
 .contact-info {
@@ -244,7 +250,10 @@ header.sticky {
     padding-left: 25px;
     
     grid-template-columns: repeat(4,1fr);
-    gap: 3rem;
+   
+    /*column-width: 5px dashed red;*/
+
+    gap: 3rem
 }
 
 .first-info img{
@@ -354,33 +363,57 @@ header.sticky {
     background-color: darkgray;
     display: grid;
     text-align: center;
+   
+
     
     grid-template-columns: repeat(4,1fr);
     gap: 3rem;
+  
 }
+
+
 
 
 .rew img{
    
-   
-    border-radius: 30px;
-    
-   
+   display: flex;
+   justify-content: center;
+    border-radius:15px;
+    max-height: 100%;
     max-width: 100%;
     width:auto;
     height: auto;
+}
+
+.pic img {
+    border-radius: 15px;
     max-height: 100%;
-    transition: all .42s;
+    max-width: 100%;
+    width: auto;
+    height:auto;
+    display: flex;
+    position: relative;
+    transition: .42s;
     
-    
-   
 }
 
-.rew img :hover {
+.pic img:hover {
     transform: translateY(-8px);
+
+}
+.raw{
+    position: relative;
+
 }
 
-.txt h3 {
+
+.raw h3 {
+    
+    position: absolute ;
+    top: 70%;
+    font-size:20px;
+    color: aliceblue;
+    
    
 }
 
@@ -395,13 +428,15 @@ header.sticky {
     margin-bottom: 10px;
 }
 
-.central-font p{
-    font-size:10px;
+.center-font p{
+    font-size:15px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
+
+
 
 
 .main-view {
@@ -420,7 +455,23 @@ header.sticky {
     height: auto;
     max-height: 100%;
     border-radius: 20px 0 20px 0;
+    transition: .42s;
+    position: relative ;
+    top: -20%;
+    
+    
 
+}
+
+.riw img:hover{
+    transform: translateY(-8px);
+    
+}
+
+.para p{
+    width:auto;
+    height: auto;
+    padding: 10px;
 }
 
 
@@ -457,14 +508,54 @@ header.sticky {
 .rew img {
 
     max-width: 100%;
-    width:auto;
+    width:10%;
     height: auto;
     max-height: 100%;
-    border-radius: 20px 0 20px 0;
-    transition: all .42s;
+    border-color: black;
+    border-radius: 30px;
+    background-color: aliceblue;
+  
+    transition:  .42s;
 
 }
 
+.rew img:hover {
+    transform: translateY(-8px);
+}
 
+.rew p {
+    font-size:15px;
+    font-weight: 400px;
+    text-align: left;
+    padding:10px;
+    margin-left: 55px;
+    
+    
+}
 
+.rew h3 {
+    font-size:15px;
+    font-weight: 400px;
+    text-align: left;
+    padding:10px;
+    margin-left: 55px;
+    color:red
+}
 
+/*.rew h3{
+    text-align: left;
+    padding: 10px;
+}*/
+.first-info span {
+    color: red
+}
+.center-matter span {
+    color:red
+}
+.center-name span {
+    color: red;
+}
+
+.center-text span {
+    color: red;
+}

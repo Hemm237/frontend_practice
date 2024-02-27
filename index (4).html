@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .btn-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+        }
+
+        .p-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        p {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #f1f1f1;
+            border: none;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+        table {
+            /* width: 100%; */
+            border-collapse: collapse;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .original {
+            background-color: #f1f1f1;
+        }
+
+        .add {
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+    <main>
+        <div class="container">
+
+
+            <table id="table2">
+                <thead>
+                    <tr>
+                        <th>sn</th>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="original">
+                        <td>1</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><button class="add">add</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </main>
+    <script>
+
+        /*$(document).ready(function() {
+            $('#add').on("click",function()) {
+                $('#table2 tbody').empty();
+                var $newrow,
+                    $newcolumn;
+                $('#table1 tbody input:checked').parent().parent().each(function() {
+                    $newrow = $('<tr></tr>').appendTo($('#table2 body'));
+                    $("td",this).each(function() {
+                        if($("input",this).length == 0) {
+                            $newcolumn = $("<td><input type='text' /></td>").appendTo($newrow)
+                            $("input",$newcolumn).val($(this).text());
+                        }
+                    })
+                })
+            }
+        })*/
+
+        $(".copy-data").click(function () {
+
+            $("table tbody2 tr").each(function () {
+                var sn = $(this).find('td:eq(0)').val();
+                var name = $(this).find('td:eq(0)').val();
+                var age = $(this).find('td:eq(0)').val();
+                var action = $(this).find('td:eq(0)').val();
+                $("#tablesTwo").append('<tr><td>"+ sn +"</td><td>" + name + "</td><td>" + age +""</td><td> "+ Action</td></tr>')
+
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
